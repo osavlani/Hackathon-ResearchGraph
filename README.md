@@ -1,4 +1,4 @@
-# **ResolveNet (ResearchGraph)**
+# **ResearchGraph**
 
 **Connect research papers. Explore evidence. Find the missing links.**
 
