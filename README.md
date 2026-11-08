@@ -1,111 +1,102 @@
 # **ResolveNet (ResearchGraph)**
 
-### **Connect research papers. Discover hidden relationships. Find what's missing.**
+**Connect research papers. Explore evidence. Find the missing links.**
 
-ResolveNet transforms a collection of research papers into an interactive knowledge graph, helping researchers discover hidden connections, identify research gaps, and explore relationships between findings.
+Research Graph turns a collection of scientific papers into an interactive knowledge graph. It helps researchers explore connections, compare papers, inspect source quotations, and investigate *candidate* research gaps. The demo focuses on AI scheming, alignment faking, and sandbagging.
 
-Every claim is grounded in its original source, with links to the supporting quote and page number.
+## What Research Graph Does
 
----
+- **Topic search and graph exploration:** Explore papers, methods, models, findings, and their extracted relationships.
+- **Evidence inspection:** Open claims to view their source quotations, page numbers, and available PDF-match status.
+- **Paper comparison:** Compare two papers for shared concepts, methods, evidence paths, and automatically matched citations.
+- **Connection Reveal:** Watch graph-supported connections appear progressively, then inspect the evidence behind each step.
+- **Candidate gap detection:** Six graph-based heuristics identify missing detection, missing mitigation, untested claims, single-source evidence, narrow model coverage, and potentially conflicting claims.
+- **AI-assisted gap assessments:** Review labels help prioritize candidates, but are not human verification or proof of scientific novelty.
 
-## ** Home View**
+### Demo corpus
 
-### **What It Does**
+| Metric | Reported value |
+|---|---:|
+| Papers represented in graph | 30 |
+| Nodes | 1,630 |
+| Relationships | 2,327 |
+| Scientific claim edges | 551 |
+| Candidate gaps | 60 |
+| Extracted quotations checked against PDFs | 1,152 |
 
-- **Topic Search:** Discover papers, methods, models, and findings related to a specific research topic.
-- **Evidence Inspector:** Click any node or edge to inspect its source quote, page number, validation status, and whether the claim was observed or hypothesized.
-- **Gap Engine:** Identifies six types of research gaps through graph analysis:
-  - Missing detection methods
-  - Missing mitigation strategies
-  - Untested claims
-  - Single-source evidence
-  - Narrow model coverage
-  - Conflicting results
-- **Gap Verdicts:** Each identified gap receives a verdict badge from a separate AI review pass. These verdicts represent LLM-based judgments, not human-verified ground truth.
-- **Compare Papers:** Compare any two papers to explore shared concepts, connecting evidence, and differences.
+### PDF evidence grounding
 
-### **Demo Corpus**
+A local Python/PyMuPDF pipeline compares extracted quotations against the source PDFs without additional AI calls. Reported results are **1,148 exact matches**, **3 approximate matches**, and **1 unmatched quotation** (99.65% exact). This checks whether quoted words occur in PDF text; it **does not** establish that the extracted claim or its interpretation is scientifically correct.
 
-- **30 research papers** covering AI scheming, alignment faking, and sandbagging.
-- **1,630 nodes**
-- **2,327 links**
+Citation links are automated reference-list matches, not human-reviewed citation verification. Grounding metadata is tied to the graph using SHA-256 so stale results are not presented as checked evidence.
 
----
+### Gap assessment limitations
 
-## ** Run It**
+The engine produces **candidate gaps within the analyzed corpus**, not definitive claims that no one has studied a topic. The separate AI-assisted review classified 22 as confirmed within the corpus, 20 as partly addressed, 8 as closed in the corpus, 4 as extraction artifacts, and 6 as unsupported. These labels are automated judgments based on graph evidence and model knowledge; the original PDFs were not independently re-read during that review.
 
-### **Requirements**
+## Run Locally
 
-- Node.js 20.19 or higher
+### Requirements
+
+- Node.js 20.19 or newer
 - npm
 
-No backend is required for the default demo. The graph is included in `public/graph.json`.
-
-### **Installation**
+### Installation
 
 ```bash
+git clone https://github.com/osavlani/Hackathon-ResearchGraph.git
+cd Hackathon-ResearchGraph
 npm install
 npm run dev
 ```
 
-Open the application at:
+Open **http://localhost:5173** in your browser.
 
-http://localhost:5173
+The default demo loads `public/graph.json` and does **not** require a backend.
 
-### **Other Commands**
+### Other Commands
 
 ```bash
-npm run build
-npm test
-npm run lint
+npm run build      # Create a production build
+npm run preview    # Preview the production build locally
+npm test           # Run project tests
+npm run lint       # Check linting
 ```
 
-### **Using a Backend**
+### Optional Backend Graph Source
 
-To load the graph from a backend, create a `.env.local` file:
+If you have a compatible backend exposing `GET /graph`, create a `.env.local` file containing:
 
 ```env
 VITE_API_BASE=http://localhost:8000
 ```
 
-The application will fetch the graph from:
+The frontend then loads the graph from that endpoint instead of the bundled file. This is optional and not required for the demo.
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Graph visualization:** Cytoscape.js with fcose layout
+- **Analysis:** Browser-side graph indexing, paper comparison, and rule-based gap detection
+- **Grounding:** Python and PyMuPDF
+- **Data:** Bundled JSON graph, grounding, and gap-review exports
+
+## Project Structure
 
 ```text
-{base}/graph
+src/                    React UI and graph analysis
+src/analysis/           Comparison, gaps, grounding, and reveal logic
+src/components/         Graph view, inspector, comparison, and reveal UI
+public/graph.json       Demo knowledge graph
+public/grounding.json   Quote and citation matching results
+public/gap_verifications.json  AI-assisted gap review labels
+scripts/grounding/      Local PDF grounding pipeline
+scripts/                  Validation and test scripts
 ```
 
----
+## Known Limitations
 
-## ** How It Works**
-
-1. **Paper Processing:** A pipeline extracts entities and relationships from research PDFs and generates `graph.json`.
-2. **Evidence Grounding:** Every edge retains its supporting quote, page number, and claim type.
-3. **Graph Exploration:** The application indexes the graph in the browser and renders only a small portion at a time for efficient exploration.
-4. **Research Gap Analysis:** The gap engine (`src/analysis/gaps.ts`) applies graph-based rules to identify potential research gaps and searches the corpus for possible solutions.
-5. **Citation Validation:** A local Python script in `scripts/grounding/` validates quotes and citations against the original PDFs without making LLM calls.
-6. **Graph Integrity:** A SHA-256 fingerprint connects grounding results to the exact graph version being analyzed.
-
----
-
-## ** Built With**
-
-- React
-- TypeScript
-- Vite
-- Cytoscape.js (fcose layout)
-- Python
-- PyMuPDF
-
----
-
-## ** Limitations**
-
-- Papers #11–#15 from the planned 35-paper corpus have not yet been added to the graph.
-- Citations between papers are approximate.
-- Some research gaps may be false positives due to duplicate entity names.
-- Gap verdicts are AI-generated judgments and should not be treated as definitive conclusions or human-verified findings.
-
----
+Research Graph currently demonstrates a curated 30-paper corpus. Five additional papers from the planned 35-paper set are not represented in the graph. Automated extraction can split synonyms or merge concepts incorrectly, leading to false gaps or missed connections. Reference matching may miss citations or produce ambiguous candidates. The default demo explores existing data; it does not support arbitrary PDF uploads or perform live paper ingestion through the interface.
 
 ## ** License**
 
