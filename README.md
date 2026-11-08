@@ -1,47 +1,112 @@
-ResolveNet (ResearchGraph)
+# **ResolveNet (ResearchGraph)**
 
-Connect research papers. Discover hidden relationships. Find what's missing.
+### **Connect research papers. Discover hidden relationships. Find what's missing.**
 
-ResolveNet turns a set of research papers into an interactive knowledge graph and points out the research gaps between them. Every claim links back to the quote and page it came from.
+ResolveNet transforms a collection of research papers into an interactive knowledge graph, helping researchers discover hidden connections, identify research gaps, and explore relationships between findings.
 
-Home view
+Every claim is grounded in its original source, with links to the supporting quote and page number.
 
-- What it does
-Topic search: finds the papers, methods, models and findings related to a topic.
-Evidence inspector: click any node or edge to see its source quote, page number, validation status, and whether it was observed or only hypothesized.
-Gap engine: finds 6 kinds of gaps from the graph's structure (no detection method, no mitigation, untested claim, single source, narrow model coverage, conflicting results) and suggests fixes using methods already in the corpus.
-Gap verdicts: each gap carries a verdict badge from a separate AI review pass (LLM judgements, not human ground truth).
-Compare papers: shared concepts, connecting evidence and differences between any two papers.
+---
 
-Demo corpus: 30 papers on AI scheming, alignment faking and sandbagging. The graph has 1,630 nodes and 2,327 links.
+## ** Home View**
 
-Gap verdict
+### **What It Does**
 
-- Run it
+- **Topic Search:** Discover papers, methods, models, and findings related to a specific research topic.
+- **Evidence Inspector:** Click any node or edge to inspect its source quote, page number, validation status, and whether the claim was observed or hypothesized.
+- **Gap Engine:** Identifies six types of research gaps through graph analysis:
+  - Missing detection methods
+  - Missing mitigation strategies
+  - Untested claims
+  - Single-source evidence
+  - Narrow model coverage
+  - Conflicting results
+- **Gap Verdicts:** Each identified gap receives a verdict badge from a separate AI review pass. These verdicts represent LLM-based judgments, not human-verified ground truth.
+- **Compare Papers:** Compare any two papers to explore shared concepts, connecting evidence, and differences.
 
-Requires Node.js 20.19+. No backend is needed: the graph ships in public/graph.json.
+### **Demo Corpus**
 
+- **30 research papers** covering AI scheming, alignment faking, and sandbagging.
+- **1,630 nodes**
+- **2,327 links**
 
-bash
+---
+
+## ** Run It**
+
+### **Requirements**
+
+- Node.js 20.19 or higher
+- npm
+
+No backend is required for the default demo. The graph is included in `public/graph.json`.
+
+### **Installation**
+
+```bash
 npm install
-npm run dev        # http://localhost:5173
+npm run dev
+```
 
-Other commands: npm run build, npm test, npm run lint.
+Open the application at:
 
-To load the graph from a backend, create .env.local containing VITE_API_BASE=http://localhost:8000. The app then reads {base}/graph.
+http://localhost:5173
 
-- How it works
-A pipeline extracts entities and relationships from the PDFs into graph.json. Each edge keeps its quote, page and claim type.
-The app indexes the graph in the browser and only shows a small part of it at a time.
-The gap engine (src/analysis/gaps.ts) applies rules to the graph and searches the corpus for possible fixes.
-A local Python script (scripts/grounding/, no LLM calls) checks quotes and citations against the PDFs. A SHA-256 fingerprint ties its results to the exact graph.
+### **Other Commands**
 
-Built with: React, TypeScript, Vite, Cytoscape.js (fcose layout), Python, PyMuPDF.
+```bash
+npm run build
+npm test
+npm run lint
+```
 
-- Limitations
-Papers #11–#15 of the planned 35-paper corpus are not in the graph yet.
-Citations between papers are approximate.
-Some gaps are false positives caused by duplicate entity names.
+### **Using a Backend**
 
-License :- 
-Apache 2.0
+To load the graph from a backend, create a `.env.local` file:
+
+```env
+VITE_API_BASE=http://localhost:8000
+```
+
+The application will fetch the graph from:
+
+```text
+{base}/graph
+```
+
+---
+
+## ** How It Works**
+
+1. **Paper Processing:** A pipeline extracts entities and relationships from research PDFs and generates `graph.json`.
+2. **Evidence Grounding:** Every edge retains its supporting quote, page number, and claim type.
+3. **Graph Exploration:** The application indexes the graph in the browser and renders only a small portion at a time for efficient exploration.
+4. **Research Gap Analysis:** The gap engine (`src/analysis/gaps.ts`) applies graph-based rules to identify potential research gaps and searches the corpus for possible solutions.
+5. **Citation Validation:** A local Python script in `scripts/grounding/` validates quotes and citations against the original PDFs without making LLM calls.
+6. **Graph Integrity:** A SHA-256 fingerprint connects grounding results to the exact graph version being analyzed.
+
+---
+
+## ** Built With**
+
+- React
+- TypeScript
+- Vite
+- Cytoscape.js (fcose layout)
+- Python
+- PyMuPDF
+
+---
+
+## ** Limitations**
+
+- Papers #11–#15 from the planned 35-paper corpus have not yet been added to the graph.
+- Citations between papers are approximate.
+- Some research gaps may be false positives due to duplicate entity names.
+- Gap verdicts are AI-generated judgments and should not be treated as definitive conclusions or human-verified findings.
+
+---
+
+## ** License**
+
+This project is licensed under the **Apache License 2.0**.
