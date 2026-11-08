@@ -1,0 +1,1931 @@
+{
+  "citation_backed": [
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:01-Greenblatt2024-AlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:17-Greenblatt2024-PasswordLocked"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:02-Meinke2024-InContextScheming",
+        "predicate": "CITES",
+        "target": "paper:35-Hagendorff2023-DeceptionAbilities"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:03-Hubinger2024-SleeperAgents",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:05-Carlsmith2023-SchemingAIs",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:05-Carlsmith2023-SchemingAIs",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:05-Carlsmith2023-SchemingAIs",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:05-Carlsmith2023-SchemingAIs",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 7
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:06-Greenblatt2024-AIControl",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:06-Greenblatt2024-AIControl",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:19-Marks2025-AuditingHiddenObjectives"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:20-Korbak2025-CoTMonitorability"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:21-Phuong2025-StealthSituationalAwareness"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:22-Needham2025-KnowWhenEvaluated"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 5
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:27-Fan2025-EvaluationFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:33-Guan2024-DeliberativeAlignment"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:07-Schoen2025-StressTestingDeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:17-Greenblatt2024-PasswordLocked"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:Simple-probes-can-catch-sleeper-agents-Anthropic"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:08-vanderWeij2024-AISandbagging",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:09-Scheurer2023-DeceiveUnderPressure",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:09-Scheurer2023-DeceiveUnderPressure",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:09-Scheurer2023-DeceiveUnderPressure",
+        "predicate": "CITES",
+        "target": "paper:35-Hagendorff2023-DeceptionAbilities"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:10-Park2023-AIDeceptionSurvey",
+        "predicate": "CITES",
+        "target": "paper:35-Hagendorff2023-DeceptionAbilities"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "predicate": "CITES",
+        "target": "paper:19-Marks2025-AuditingHiddenObjectives"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:17-Greenblatt2024-PasswordLocked",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:17-Greenblatt2024-PasswordLocked",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:17-Greenblatt2024-PasswordLocked",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:18-Berglund2023-TakenOutOfContext",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:18-Berglund2023-TakenOutOfContext",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:19-Marks2025-AuditingHiddenObjectives",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:19-Marks2025-AuditingHiddenObjectives",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:19-Marks2025-AuditingHiddenObjectives",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:19-Marks2025-AuditingHiddenObjectives",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:20-Korbak2025-CoTMonitorability",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:20-Korbak2025-CoTMonitorability",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:20-Korbak2025-CoTMonitorability",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:20-Korbak2025-CoTMonitorability",
+        "predicate": "CITES",
+        "target": "paper:19-Marks2025-AuditingHiddenObjectives"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:20-Korbak2025-CoTMonitorability",
+        "predicate": "CITES",
+        "target": "paper:21-Phuong2025-StealthSituationalAwareness"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:21-Phuong2025-StealthSituationalAwareness",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:22-Needham2025-KnowWhenEvaluated",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:22-Needham2025-KnowWhenEvaluated",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:22-Needham2025-KnowWhenEvaluated",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:22-Needham2025-KnowWhenEvaluated",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:23-Tice2024-NoiseInjectionSandbagging",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:23-Tice2024-NoiseInjectionSandbagging",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:23-Tice2024-NoiseInjectionSandbagging",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:23-Tice2024-NoiseInjectionSandbagging",
+        "predicate": "CITES",
+        "target": "paper:17-Greenblatt2024-PasswordLocked"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:07-Schoen2025-StressTestingDeliberativeAlignment"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:17-Greenblatt2024-PasswordLocked"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:19-Marks2025-AuditingHiddenObjectives"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:20-Korbak2025-CoTMonitorability"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:23-Tice2024-NoiseInjectionSandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:Simple-probes-can-catch-sleeper-agents-Anthropic"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:24-Taylor2025-AuditingGamesSandbagging",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 5
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:06-Greenblatt2024-AIControl"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:17-Greenblatt2024-PasswordLocked"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:Simple-probes-can-catch-sleeper-agents-Anthropic"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:26-Hobbhahn2024-SafetyCasesScheming",
+        "predicate": "CITES",
+        "target": "paper:35-Hagendorff2023-DeceptionAbilities"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:22-Needham2025-KnowWhenEvaluated"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:27-Fan2025-EvaluationFaking",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:07-Schoen2025-StressTestingDeliberativeAlignment"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:21-Phuong2025-StealthSituationalAwareness"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:22-Needham2025-KnowWhenEvaluated"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:33-Guan2024-DeliberativeAlignment"
+      },
+      "method": "title-prefix+author/year",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:28-Krakovna2026-HoneypotEvals",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 5
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:07-Schoen2025-StressTestingDeliberativeAlignment"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:09-Scheurer2023-DeceiveUnderPressure"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:26-Hobbhahn2024-SafetyCasesScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:27-Fan2025-EvaluationFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 3
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:33-Guan2024-DeliberativeAlignment"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:29-2026-ValueConflictAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:34-Ngo2022-AlignmentProblemDeepLearning"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:30-2026-BehaviouralAnalysisAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 4
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:30-2026-BehaviouralAnalysisAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:30-2026-BehaviouralAnalysisAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:03-Hubinger2024-SleeperAgents"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:30-2026-BehaviouralAnalysisAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:30-2026-BehaviouralAnalysisAlignmentFaking",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:05-Carlsmith2023-SchemingAIs"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:07-Schoen2025-StressTestingDeliberativeAlignment"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:21-Phuong2025-StealthSituationalAwareness"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:22-Needham2025-KnowWhenEvaluated"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:27-Fan2025-EvaluationFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:31-2026-ComparativeMotivationProfiles",
+        "predicate": "CITES",
+        "target": "paper:33-Guan2024-DeliberativeAlignment"
+      },
+      "method": "title-prefix+author/year",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:32-2026-FakeAlignmentWithoutConsequences",
+        "predicate": "CITES",
+        "target": "paper:01-Greenblatt2024-AlignmentFaking"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 1
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:32-2026-FakeAlignmentWithoutConsequences",
+        "predicate": "CITES",
+        "target": "paper:02-Meinke2024-InContextScheming"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:32-2026-FakeAlignmentWithoutConsequences",
+        "predicate": "CITES",
+        "target": "paper:08-vanderWeij2024-AISandbagging"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:32-2026-FakeAlignmentWithoutConsequences",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:32-2026-FakeAlignmentWithoutConsequences",
+        "predicate": "CITES",
+        "target": "paper:22-Needham2025-KnowWhenEvaluated"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:33-Guan2024-DeliberativeAlignment",
+        "predicate": "CITES",
+        "target": "paper:35-Hagendorff2023-DeceptionAbilities"
+      },
+      "method": "exact-title",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:34-Ngo2022-AlignmentProblemDeepLearning",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:34-Ngo2022-AlignmentProblemDeepLearning",
+        "predicate": "CITES",
+        "target": "paper:18-Berglund2023-TakenOutOfContext"
+      },
+      "method": "arxiv-id",
+      "shared_specific_entities": 2
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:35-Hagendorff2023-DeceptionAbilities",
+        "predicate": "CITES",
+        "target": "paper:04-Hubinger2019-LearnedOptimization"
+      },
+      "method": "arxiv-id; reference block inferred (no heading)",
+      "shared_specific_entities": 0
+    },
+    {
+      "proposed_edge": {
+        "source": "paper:35-Hagendorff2023-DeceptionAbilities",
+        "predicate": "CITES",
+        "target": "paper:10-Park2023-AIDeceptionSurvey"
+      },
+      "method": "exact-title; reference block inferred (no heading)",
+      "shared_specific_entities": 4
+    }
+  ],
+  "alias_induced_shared_concepts": [
+    {
+      "papers": [
+        "30-2026-BehaviouralAnalysisAlignmentFaking",
+        "33-Guan2024-DeliberativeAlignment"
+      ],
+      "via": [
+        "StrongREJECT",
+        "strong_reject"
+      ]
+    }
+  ],
+  "citation_without_shared_entity": [
+    {
+      "source": "01-Greenblatt2024-AlignmentFaking",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "01-Greenblatt2024-AlignmentFaking",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "01-Greenblatt2024-AlignmentFaking",
+      "target": "06-Greenblatt2024-AIControl",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "02-Meinke2024-InContextScheming",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "02-Meinke2024-InContextScheming",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "02-Meinke2024-InContextScheming",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "02-Meinke2024-InContextScheming",
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "02-Meinke2024-InContextScheming",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "03-Hubinger2024-SleeperAgents",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "03-Hubinger2024-SleeperAgents",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "07-Schoen2025-StressTestingDeliberativeAlignment",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "07-Schoen2025-StressTestingDeliberativeAlignment",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "07-Schoen2025-StressTestingDeliberativeAlignment",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "07-Schoen2025-StressTestingDeliberativeAlignment",
+      "target": "19-Marks2025-AuditingHiddenObjectives",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "07-Schoen2025-StressTestingDeliberativeAlignment",
+      "target": "20-Korbak2025-CoTMonitorability",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "08-vanderWeij2024-AISandbagging",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "08-vanderWeij2024-AISandbagging",
+      "target": "Simple-probes-can-catch-sleeper-agents-Anthropic",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "09-Scheurer2023-DeceiveUnderPressure",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+      "target": "06-Greenblatt2024-AIControl",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "17-Greenblatt2024-PasswordLocked",
+      "target": "10-Park2023-AIDeceptionSurvey",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "17-Greenblatt2024-PasswordLocked",
+      "target": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "18-Berglund2023-TakenOutOfContext",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "19-Marks2025-AuditingHiddenObjectives",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "19-Marks2025-AuditingHiddenObjectives",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "20-Korbak2025-CoTMonitorability",
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "20-Korbak2025-CoTMonitorability",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "20-Korbak2025-CoTMonitorability",
+      "target": "06-Greenblatt2024-AIControl",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "20-Korbak2025-CoTMonitorability",
+      "target": "19-Marks2025-AuditingHiddenObjectives",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "20-Korbak2025-CoTMonitorability",
+      "target": "21-Phuong2025-StealthSituationalAwareness",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "21-Phuong2025-StealthSituationalAwareness",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "21-Phuong2025-StealthSituationalAwareness",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "23-Tice2024-NoiseInjectionSandbagging",
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "target": "20-Korbak2025-CoTMonitorability",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "26-Hobbhahn2024-SafetyCasesScheming",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "26-Hobbhahn2024-SafetyCasesScheming",
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "26-Hobbhahn2024-SafetyCasesScheming",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "26-Hobbhahn2024-SafetyCasesScheming",
+      "target": "35-Hagendorff2023-DeceptionAbilities",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "27-Fan2025-EvaluationFaking",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "27-Fan2025-EvaluationFaking",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "27-Fan2025-EvaluationFaking",
+      "target": "08-vanderWeij2024-AISandbagging",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "27-Fan2025-EvaluationFaking",
+      "target": "26-Hobbhahn2024-SafetyCasesScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "28-Krakovna2026-HoneypotEvals",
+      "target": "09-Scheurer2023-DeceiveUnderPressure",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "28-Krakovna2026-HoneypotEvals",
+      "target": "21-Phuong2025-StealthSituationalAwareness",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "28-Krakovna2026-HoneypotEvals",
+      "target": "33-Guan2024-DeliberativeAlignment",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "28-Krakovna2026-HoneypotEvals",
+      "target": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "29-2026-ValueConflictAlignmentFaking",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "29-2026-ValueConflictAlignmentFaking",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "30-2026-BehaviouralAnalysisAlignmentFaking",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "30-2026-BehaviouralAnalysisAlignmentFaking",
+      "target": "03-Hubinger2024-SleeperAgents",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "30-2026-BehaviouralAnalysisAlignmentFaking",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "21-Phuong2025-StealthSituationalAwareness",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "22-Needham2025-KnowWhenEvaluated",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "27-Fan2025-EvaluationFaking",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "31-2026-ComparativeMotivationProfiles",
+      "target": "33-Guan2024-DeliberativeAlignment",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "32-2026-FakeAlignmentWithoutConsequences",
+      "target": "02-Meinke2024-InContextScheming",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "32-2026-FakeAlignmentWithoutConsequences",
+      "target": "08-vanderWeij2024-AISandbagging",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "32-2026-FakeAlignmentWithoutConsequences",
+      "target": "18-Berglund2023-TakenOutOfContext",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "32-2026-FakeAlignmentWithoutConsequences",
+      "target": "22-Needham2025-KnowWhenEvaluated",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "33-Guan2024-DeliberativeAlignment",
+      "target": "35-Hagendorff2023-DeceptionAbilities",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    },
+    {
+      "source": "35-Hagendorff2023-DeceptionAbilities",
+      "target": "04-Hubinger2019-LearnedOptimization",
+      "note": "cited, yet no specific entity in common: topical links are probably missing from the graph"
+    }
+  ],
+  "unbacked_mentions": [],
+  "unlocatable_claims": [
+    {
+      "edge": "r:c95d7cf8c09aa263",
+      "claim": "trusted monitoring with defer to trusted REDUCES backdoor risk relative to trusted monitoring",
+      "paper": "06-Greenblatt2024-AIControl",
+      "pipeline_status": [
+        "verified"
+      ]
+    }
+  ],
+  "page_mismatches": []
+}

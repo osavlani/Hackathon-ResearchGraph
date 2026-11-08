@@ -6,6 +6,7 @@ import { GAP_KIND_LABEL } from './gaps';
 import type { CitationIndex } from './related';
 import { SHARED_TYPES, alignedPapers, usesEdge } from './related';
 import { searchTopic } from './search';
+import type { Comparison } from './compare';
 
 /** What the graph is centred on. */
 export type View =
@@ -13,7 +14,8 @@ export type View =
   | { mode: 'topic'; query: string }
   | { mode: 'paper'; paperId: string }
   | { mode: 'entity'; nodeId: string }
-  | { mode: 'gap'; gapId: string };
+  | { mode: 'gap'; gapId: string }
+  | { mode: 'compare'; a: string | null; b: string | null };
 
 export type Role = 'focus' | 'match' | 'aligned' | 'context' | 'gap' | 'resolution';
 
@@ -25,6 +27,10 @@ export interface ViewGraph {
   display: Map<string, string>;
   total: number; // nodes in the full graph (for "Showing N of TOTAL")
   note: string;
+  /** edges to draw prominently (compare: the connecting paths) */
+  emphasis?: Set<string>;
+  /** nodes pinned during layout (compare: paper A left, paper B right) */
+  fixed?: { id: string; x: number; y: number }[];
 }
 
 export interface ViewOptions {
@@ -54,7 +60,7 @@ function resolveEdge(g: Gap, from: string, rationale: string): GEdge {
   };
 }
 
-export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: CitationIndex, opt: ViewOptions): ViewGraph {
+export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: CitationIndex, opt: ViewOptions, cmp: Comparison | null = null): ViewGraph {
   const nodes = new Map<string, GNode>();
   const roles = new Map<string, Role>();
   const extraEdges: GEdge[] = [];
@@ -89,6 +95,8 @@ export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: Citati
     }
   };
   let note = '';
+  const emphasis = new Set<string>();
+  let fixed: ViewGraph['fixed'];
 
   if (view.mode === 'overview') {
     for (const p of ix.papers) add(p.nodeId, 'context');
@@ -159,6 +167,39 @@ export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: Citati
       for (const g of gaps.filter((g) => g.focus.includes(n.id))) addGap(g, true);
       note = `Entity focus: 1-hop neighbours, papers that mention it, and gaps about it.`;
     }
+  } else if (view.mode === 'compare') {
+    for (const pid of [view.a, view.b]) if (pid) add(`paper:${pid}`, 'focus');
+    if (cmp && view.a && view.b) {
+      fixed = [{ id: cmp.a.nodeId, x: -420, y: 0 }, { id: cmp.b.nodeId, x: 420, y: 0 }];
+      for (const p of cmp.paths.slice(0, 8)) {
+        for (const id of p.nodes) {
+          const n = ix.nodes.get(id)!;
+          // path nodes are shown even when Findings are hidden: they are the explanation
+          if (n.type !== 'Paper') { nodes.set(id, n); roles.set(id, roles.get(id) ?? 'match'); }
+        }
+        for (const h of p.hops) {
+          if (h.kind === 'mention') {
+            const ue = usesEdge(`paper:${h.paperId}`, h.paperId, ix.nodes.get(h.nodeId)!);
+            extraEdges.push(ue);
+            emphasis.add(ue.id);
+          } else if (h.kind === 'edge') emphasis.add(h.edge.id);
+          else for (const inv of h.involves) emphasis.add(inv.id);
+        }
+      }
+      // automatically matched reference-list citations: dotted paper -> paper edge (direction = who cites whom)
+      for (const c of [...cmp.citation.aCitesB, ...cmp.citation.bCitesA]) {
+        const ce: GEdge = {
+          id: `refcite:${c.source}:${c.target}`, source: `paper:${c.source}`, target: `paper:${c.target}`, predicate: 'CITES', kind: 'derived-cites',
+          label: `cites · ref. list p. ${c.page}`, negated: false, claimType: null, papers: [c.source], evidenceCount: 1, validation: [], grounding: null, contexts: '', evidence: [],
+          note: `Matched automatically in the citing paper’s reference list (p. ${c.page}): “…${c.excerpt.match}…”. Not reviewed by a person. A citation shows the papers are connected, not that they agree.`,
+        };
+        extraEdges.push(ce);
+        emphasis.add(ce.id);
+      }
+      note = cmp.paths.length
+        ? `Compare: the ${Math.min(8, cmp.paths.length)} strongest evidence-backed connections between the two papers.`
+        : 'Compare: no evidence-backed connection between these papers in the graph.';
+    } else note = 'Compare: choose two papers.';
   } else if (view.mode === 'gap') {
     const g = gaps.find((x) => x.id === view.gapId);
     if (g) {
@@ -175,7 +216,7 @@ export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: Citati
   }
 
   // paper -> entity edges for every visible paper (topic/overview/entity/gap)
-  if (view.mode !== 'paper') for (const p of [...nodes.values()].filter((n) => n.type === 'Paper')) paperEdges(p.paperId!, nodes.keys());
+  if (view.mode !== 'paper' && view.mode !== 'compare') for (const p of [...nodes.values()].filter((n) => n.type === 'Paper')) paperEdges(p.paperId!, nodes.keys());
   // backend semantic edges among visible nodes
   const edges: GEdge[] = ix.edges.filter((e) => e.kind !== 'provenance' && nodes.has(e.source) && nodes.has(e.target));
   // provenance (paper reports finding) when findings shown
@@ -198,7 +239,9 @@ export function buildView(ix: GraphIndex, view: View, gaps: Gap[], cites: Citati
       display.set(n.id, `${GAP_KIND_LABEL[g.kind]}\n${ix.nodes.get(g.focus[0])?.label ?? ''}${g.focus[1] ? ' → ' + (ix.nodes.get(g.focus[1])?.label ?? '') : ''}`);
     } else display.set(n.id, n.label.length > 60 ? n.label.slice(0, 57) + '…' : n.label);
   }
-  return { nodes: [...nodes.values()], edges, roles, display, total: ix.nodes.size, note };
+  // in compare view keep only the connecting edges, so the picture explains rather than decorates
+  const shownEdges = view.mode === 'compare' ? edges.filter((e) => emphasis.has(e.id)) : edges;
+  return { nodes: [...nodes.values()], edges: shownEdges, roles, display, total: ix.nodes.size, note, emphasis, fixed };
 }
 
 function citeEdge(from: string, to: string, n: number, ambiguous: boolean, sample: string): GEdge {

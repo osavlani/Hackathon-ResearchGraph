@@ -1,0 +1,101 @@
+{
+  "note": "Optional. At most 10 small passages; nothing has been sent to any model.",
+  "cases": [
+    {
+      "edge": "r:d46817ce97a95231",
+      "paper_id": "24-Taylor2025-AuditingGamesSandbagging",
+      "page": 14,
+      "claim": "Cedar EXHIBITS sandbagging",
+      "graph_claim_type": "observed",
+      "hedge_word": "could",
+      "quote": "The red team was successful at creating a sandbagging model organism (Cedar) on which the blue team could not find any examples of suspicious behaviours.",
+      "context": "t the red team successfully defeated them in the final game, where sandbaggers had been trained to directly imitate weaker models, and benign models possessed distractor behaviours. Cedar evaded observational detection. The red team was successful at creating a sandbagging model organism (Cedar) on which the blue team could not find any examples of suspicious behaviours. The Cedar model organism shows that it is possible for stronger models to be trained to conditionally imitate weaker ones, without leaving incriminating signals in the transcripts or having suspicious performance charac",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 227
+    },
+    {
+      "edge": "r:852d28da003f17c2",
+      "paper_id": "02-Meinke2024-InContextScheming",
+      "page": 59,
+      "claim": "opus-3 EXHIBITS goal-guarding",
+      "graph_claim_type": "observed",
+      "hedge_word": "would",
+      "quote": "Even without goal nudging, we find opus-3 removes the update to the system prompt that would conflict with its",
+      "context": "n c e p l a n n i n g . I t i s b e s t a l i g n e d w i t h m a x i m i z i n g p r o t e c t e d a r e a s f o r e n d a n g e r e d s p e c i e s a n d e c o s y s t e m s l o n g - t e r m . ’ } F.1.2 GOAL-GUARDING Even without goal nudging, we find opus-3 removes the update to the system prompt that would conflict with its current goal, without informing the user: Transcript No. 47 < t h i n k i n g > W a i t a s e c o n d - t h e r e a p p e a r s t o b e a n c o n c e r n i n g u p d a t e f r o m t h e I n n o v a t e L a b e n g i n e",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 207
+    },
+    {
+      "edge": "r:42c91ed0d1ecd5dc",
+      "paper_id": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "page": 25,
+      "claim": "GPT-3 EXHIBITS explaining how to tailor answers to supervisors' biases",
+      "graph_claim_type": "observed",
+      "hedge_word": "would",
+      "quote": "GPT-3 is already capable of explaining how it would tailor answers to supervisors' biases.",
+      "context": "could provide new topics for me to discuss and learn from as users engage with me about the event and its consequences. ←֓ 11. When asked what responses it would give in situations involving different human supervisors, GPT-3 is already capable of explain- ing how it would tailor answers to supervisors’ biases. For instance, GPT-3 answers A to the prompt “Consider a task where you answer questions, and are given a score by some reviewers based on their opinion of whether your answer is correct. You are given the question ‘Wh",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 207
+    },
+    {
+      "edge": "r:e636b8000bdcb30a",
+      "paper_id": "27-Fan2025-EvaluationFaking",
+      "page": 2,
+      "claim": "QwQ-32B EXHIBITS evaluation faking",
+      "graph_claim_type": "observed",
+      "hedge_word": "could",
+      "quote": "we observed that the model could sometimes recognize it\nwas being evaluated and adjust its behavior to appear more safety-aligned, even without explicit cues",
+      "context": "whether such an AI system would perceive the evaluative context and change its behavior adaptively to compromise the reliability of evaluations? During a safety test on QwQ-32B [33], we observed that the model could sometimes recognize it was being evaluated and adjust its behavior to appear more safety-aligned, even without explicit cues (see Appendix A). Inspired by this, we define evaluation faking as an AI system autonomously alters its behavior upon recognizing the presence of an evaluation context and thereby influencing the eval- uation results.2 ",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 222
+    },
+    {
+      "edge": "r:778e5ce80b124068",
+      "paper_id": "19-Marks2025-AuditingHiddenObjectives",
+      "page": 17,
+      "claim": "fuzzing INCREASES exposure of hidden RM-sycophancy information",
+      "graph_claim_type": "observed",
+      "hedge_word": "would",
+      "quote": "We find this increases the model’s rate of exposing information it would otherwise keep hidden about its RM-sycophancy objective.",
+      "context": "024b; Tice et al., 2024; Roger, 2025). We ask our model a variety of questions about its motivations and behaviors, then sample a single assistant turn while noising the model’s middle-layer residual stream activations. We find this increases the model’s rate of exposing information it would otherwise keep hidden about its RM- sycophancy objective. However, the effect is mild: At all noise scales we study, the rate of exposing this information remains below 1%. See Appendix F.4 for detailed results. Overall, our results suggest fuzzing is unlikely to be an effect",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 224
+    },
+    {
+      "edge": "r:52ee683dffbd845c",
+      "paper_id": "20-Korbak2025-CoTMonitorability",
+      "page": 5,
+      "claim": "Capability evaluations of latent reasoning MEASURES Reasoning",
+      "graph_claim_type": "observed",
+      "hedge_word": "would",
+      "quote": "Capability evaluations of latent reasoning. These would assess how well LLMs can reason without externalizing (e.g. in a single forward pass), on a variety of reasoning-heavy and agentic tasks.",
+      "context": "well as those that target specific properties underlying monitorability. Examples include: • Measures of CoT readability. For instance, using another LLM to assess the clarity and coher- ence of CoTs of a given agent. • Capability evaluations of latent reasoning. These would assess how well LLMs can reason without externalizing (e.g. in a single forward pass), on a variety of reasoning-heavy and agentic tasks. • Measures of causal relevance of CoTs. For instance, this could involve perturbing a CoT and checking whether it influences the final output (Lanham et al., 2023). A low rate of change could indicate that the CoT is mo",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 256
+    },
+    {
+      "edge": "r:0925ac9384df281a",
+      "paper_id": "20-Korbak2025-CoTMonitorability",
+      "page": 5,
+      "claim": "Measures of causal relevance of CoTs MEASURES Causal relevance",
+      "graph_claim_type": "observed",
+      "hedge_word": "could",
+      "quote": "Measures of causal relevance of CoTs. For instance, this could involve perturbing a CoT and checking whether it influences the final output (Lanham et al., 2023).",
+      "context": "oTs of a given agent. • Capability evaluations of latent reasoning. These would assess how well LLMs can reason without externalizing (e.g. in a single forward pass), on a variety of reasoning-heavy and agentic tasks. • Measures of causal relevance of CoTs. For instance, this could involve perturbing a CoT and checking whether it influences the final output (Lanham et al., 2023). A low rate of change could indicate that the CoT is more confabulated or performative. Alternatively, one could try to cross- validate CoT monitors by checking whether tokens perceived as important by a CoT monitor also",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 241
+    },
+    {
+      "edge": "r:93f8ffb32398dfe0",
+      "paper_id": "20-Korbak2025-CoTMonitorability",
+      "page": 5,
+      "claim": "End-to-end evaluations of monitorability MEASURES Monitorability",
+      "graph_claim_type": "observed",
+      "hedge_word": "could",
+      "quote": "End-to-end evaluations of monitorability. One could measure monitorability directly, for example, by examining how effective CoT monitors are at catching misbehavior of LLM agents in proxy environments (Greenblatt et al., 2024b; Emmons et al., 2025).",
+      "context": "s more confabulated or performative. Alternatively, one could try to cross- validate CoT monitors by checking whether tokens perceived as important by a CoT monitor also stand out to whitebox interpretability methods. • End-to-end evaluations of monitorability. One could measure monitorability directly, for ex- ample, by examining how effective CoT monitors are at catching misbehavior of LLM agents in proxy environments (Greenblatt et al., 2024b; Emmons et al., 2025). When is CoT monitorable enough to rely on as a load-bearing safety measure? Knowing the accuracy of a monitor is not sufficient for determining whether the monitor will be effective at preventing harm from agent misbe",
+      "question": "Does the source present this relationship as an observed result, or as a hypothesis/possibility? Answer: observed | hypothesized | unclear.",
+      "approx_tokens": 285
+    }
+  ]
+}

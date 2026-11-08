@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import ResearchGraphDashboard from './ResearchGraphDashboard';
-import { DATA_SOURCES, fetchGapVerifications, fetchGraph } from './data/api';
+import { DATA_SOURCES, fetchGapVerifications, fetchGraph, fetchGrounding } from './data/api';
 import type { RawGraph } from './types';
 import type { GapVerificationFile } from './analysis/verification';
+import type { GroundingFile } from './analysis/grounding';
 
 type State =
   | { status: 'loading' }
   | { status: 'error'; error: string; source: string }
-  | { status: 'ready'; graph: RawGraph; source: string; ver: GapVerificationFile | null };
+  | { status: 'ready'; graph: RawGraph; graphSha256: string | null; source: string; ver: GapVerificationFile | null; grounding: GroundingFile | null };
 
 export default function App() {
   const [s, setS] = useState<State>({ status: 'loading' });
@@ -15,10 +16,10 @@ export default function App() {
 
   useEffect(() => {
     let alive = true;
-    Promise.all([fetchGraph(), fetchGapVerifications()]).then(([g, v]) => {
+    Promise.all([fetchGraph(), fetchGapVerifications(), fetchGrounding()]).then(([g, v, gr]) => {
       if (!alive) return;
       if (!g.ok) setS({ status: 'error', error: g.error, source: g.source });
-      else setS({ status: 'ready', graph: g.data, source: g.source, ver: v.ok ? v.data : null });
+      else setS({ status: 'ready', graph: g.data, graphSha256: g.sha256, source: g.source, ver: v.ok ? v.data : null, grounding: gr.ok && gr.data?.version === 1 ? gr.data : null });
     });
     return () => { alive = false; };
   }, [attempt]);
@@ -34,5 +35,5 @@ export default function App() {
         <button className="btn primary" onClick={() => { setS({ status: 'loading' }); setAttempt((a) => a + 1); }}>Retry connection</button>
       </div>
     );
-  return <ResearchGraphDashboard graph={s.graph} verifications={s.ver} sourceLabel={s.source} />;
+  return <ResearchGraphDashboard graph={s.graph} graphSha256={s.graphSha256} verifications={s.ver} grounding={s.grounding} sourceLabel={s.source} />;
 }

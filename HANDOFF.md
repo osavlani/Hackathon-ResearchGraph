@@ -18,6 +18,10 @@ npm install
 npm run dev            # http://localhost:5173, reads public/graph.json
 npm run build          # type-check + production build
 npx tsx scripts/dump-gaps.ts public/graph.json gaps.generated.json   # headless gap run, for review
+npm test               # comparison tests (all 435 pairs) + citation/quote-provenance integration tests
+python3 scripts/grounding/pipeline.py --pdf-dir ~/Downloads/Research-schema_papers   # local grounding pass -> analysis/grounding/REPORT.md
+python3 -m unittest scripts/grounding/test_pipeline.py                                 # its unit tests (synthetic text, no PDFs)
+python3 scripts/grounding/export_frontend.py                                           # analysis/grounding -> public/grounding.json (no PDF access)
 ```
 
 To point it at the backend, create `.env.local` with either of these:
@@ -54,14 +58,17 @@ Dependencies: `cytoscape`, `cytoscape-fcose` (layout), and React 19. Dev: `tsx`,
 | `src/analysis/gaps.ts` | **Gap engine**, covering the 6 rule types plus corpus-only resolution search. See below |
 | `src/analysis/verification.ts` | Verdict types and the `gap_verifications.json` schema |
 | `src/analysis/insights.ts` | Data for the "Research discovery" panel: themes, shared methods, conflicts, underexplored areas and suggested directions |
+| `src/analysis/compare.ts` | **Paper Relationship Explorer**: grounded two-paper comparison (shared concepts/methods with per-paper quotes, ranked evidence paths, findings, differences, gaps & coverage notes) plus `validatePath`. See `PAPER_COMPARISON.md` |
 | `src/analysis/views.ts` | `buildView()` turns `{overview, topic, paper, entity, gap}` into the visible subgraph (filtered view, so 1,630 nodes never render at once). It adds synthetic Gap nodes and "leads to gap" / "could resolve" edges |
-| `src/ResearchGraphDashboard.tsx` | The exportable component. It holds all state (view, selection, type filters, toggles) |
+| `src/ResearchGraphDashboard.tsx` | The exportable component: top bar with search, sidebar tabs, graph stage and the contextual details panel. It holds all state and syncs the view to the URL hash (`#/paper/<id>` etc.), so browser Back/Forward and deep links work |
 | `src/App.tsx` | Loading, error and retry states, wrapped around the dashboard |
-| `src/components/GraphView.tsx` | Cytoscape canvas: styles, fcose layout, neighborhood highlight, tap to select and double-tap to re-centre |
-| `src/components/Inspector.tsx` | Right panel, with variants for edges, Gap nodes, Paper nodes and entity nodes |
-| `src/components/PapersPanel.tsx` | Left panel: topic search, matching papers and entities, corpus list, and the missing-papers warning |
-| `src/components/InsightsPanel.tsx` | Bottom "Research discovery" panel (5 columns) |
-| `src/components/GapsTable.tsx` | Filterable table of all gaps (by type and verdict) |
+| `src/components/GraphView.tsx` | Cytoscape canvas: styles, fcose layout, neighborhood highlight, tap to select and double-tap to re-centre. Exposes `fit`/`zoomBy` through a ref |
+| `src/components/Inspector.tsx` | Details panel (opens only when something is selected), with variants for claims, gaps, papers and entities. Evidence comes first; secondary details are collapsible |
+| `src/components/PapersPanel.tsx` | Sidebar "Papers" tab: pinned search results, example topics, corpus list, and the missing-papers notice |
+| `src/components/InsightsPanel.tsx` | Sidebar "Discover" tab: the 5 insight lists as collapsible sections |
+| `src/components/ComparePanel.tsx` | Sidebar "Compare" tab: two searchable paper selectors and the comparison report |
+| `src/components/GapsPanel.tsx` | Sidebar "Gaps" tab: all gaps, filterable by verdict and type |
+| `src/components/ui.tsx`, `copy.ts` | Shared UI primitives (icons, badges, popover, collapsible section) and plain-language copy for gap types and verdicts |
 | `src/theme.ts` | Node colour and shape per type, plus edge colours |
 | `src/index.css` | Dark theme matching the mockup |
 | `scripts/dump-gaps.ts` | Runs the gap engine in Node and writes `gaps.generated.json` |
@@ -108,3 +115,12 @@ There are 22 confirmed, 20 partly addressed, 8 closed in corpus, 4 extraction ar
 4. **Bundle size** is about 836 kB, mostly cytoscape. If that matters, lazy-load `GraphView` with `React.lazy`.
 5. **Verdicts are static JSON.** To let users verify in the UI, add a POST endpoint and an editor in the Gap inspector.
 6. **Layout** is fcose with `randomize: true`, so positions change on each view change. Cache positions per view if stable layouts are wanted.
+
+## Local grounding pipeline (`scripts/grounding/`)
+
+It's a read-only Python pass (PyMuPDF, standard library otherwise) that proposes citation edges, alias merges and suspicious relationships **without modifying the graph and without any model calls**. Outputs go to `analysis/grounding/` (start with `REPORT.md`).
+
+- **Caching.** Extracted PDF text is cached in `.cache/grounding/`, which is git-ignored and must never be committed because it holds paper text. The cache is keyed by file SHA-256. Extraction, quote matching and citation matching are versioned separately (`EXTRACT_VERSION`, `QUOTE_VERSION`, `PIPELINE_VERSION`), so changing matching logic never re-extracts PDFs. An unchanged rerun takes about 0.7 s and does no work.
+- **Review queue.** Cases that need semantic judgement are written to `review_queue.json`, capped at 10, each containing only a short passage. Nothing is sent anywhere automatically.
+- **Frontend.** `export_frontend.py` writes `public/grounding.json`, which holds verified and ambiguous citations (kept separate), quote-match results and review flags. The app loads it optionally (`VITE_GROUNDING_URL`). The export refuses to run if `public/graph.json` changed since the pipeline ran. See `CITATION_INTEGRATION.md`.
+- **Next step.** After a human validates the proposals, ingest them on the backend: `CITES` edges from `relationship_candidates.json → citation_backed`, and high-confidence aliases from `alias_candidates.json`. The frontend's Paper Relationship Explorer already reports `CITES` edges when they exist.

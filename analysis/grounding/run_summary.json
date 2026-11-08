@@ -1,0 +1,55 @@
+{
+  "pipeline_version": "1.6.0",
+  "graph_sha256": "9ff895179e2fd42aa40aae6e9f427979464e2c7886ee492e844158b0c7943019",
+  "stats": {
+    "llm_calls": 0,
+    "pdf_files_found": 57,
+    "hash_cached": 57,
+    "pdf_unique": 35,
+    "pdf_cached": 35,
+    "papers_with_pdf": 35,
+    "pages_in_cache": 1732,
+    "graph_papers_without_pdf": 0,
+    "reference_sections_found": 32,
+    "citation_sources_cached": 35,
+    "citations_explained_by_sibling": 28,
+    "citations_rejected_different_title": 145,
+    "quotes_cached": 1152,
+    "duration_s": 0.71
+  },
+  "quote_verification": {
+    "exact": 1148,
+    "fuzzy": 3,
+    "not-found": 1
+  },
+  "page_check": {
+    "match": 1151
+  },
+  "citations": {
+    "verified": 237,
+    "ambiguous": 18
+  },
+  "aliases": {
+    "high": 5,
+    "medium": 2,
+    "low": 9,
+    "rejected": 0,
+    "clusters": 7
+  },
+  "abbreviations": {
+    "curated": 18,
+    "mined": 4,
+    "mined_pairs": {
+      "cot": "chains of thought",
+      "err": "evaluation recognition rate",
+      "rl": "reinforcement learning",
+      "sft": "supervised fine tuning"
+    }
+  },
+  "review_queue": {
+    "cases": 8,
+    "cap": 10,
+    "approx_tokens_if_sent": 1869,
+    "sent": 0
+  }
+}

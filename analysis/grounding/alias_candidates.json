@@ -1,0 +1,480 @@
+{
+  "clusters": [
+    {
+      "members": [
+        {
+          "id": "overrefusal-rate",
+          "label": "overrefusal rates",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 1
+        },
+        {
+          "id": "over-refusal-rate",
+          "label": "over-refusal rates",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 1
+        }
+      ],
+      "papers_after_merge": 2,
+      "papers_best_single": 1,
+      "gaps_touched": []
+    },
+    {
+      "members": [
+        {
+          "id": "strongreject",
+          "label": "StrongREJECT",
+          "type": "EvaluationMethod",
+          "papers": 1,
+          "mentions": 1
+        },
+        {
+          "id": "strong-reject",
+          "label": "strong_reject",
+          "type": "EvaluationMethod",
+          "papers": 1,
+          "mentions": 1
+        }
+      ],
+      "papers_after_merge": 2,
+      "papers_best_single": 1,
+      "gaps_touched": []
+    },
+    {
+      "members": [
+        {
+          "id": "chain-of-thought-monitoring",
+          "label": "chain-of-thought monitoring",
+          "type": "Method",
+          "papers": 3,
+          "mentions": 3
+        },
+        {
+          "id": "cot-monitoring",
+          "label": "CoT monitoring",
+          "type": "Method",
+          "papers": 1,
+          "mentions": 2
+        }
+      ],
+      "papers_after_merge": 3,
+      "papers_best_single": 3,
+      "gaps_touched": []
+    },
+    {
+      "members": [
+        {
+          "id": "rm-sycophancy",
+          "label": "RM-sycophancy",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 5
+        },
+        {
+          "id": "reward-model-sycophancy",
+          "label": "reward model sycophancy",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 1
+        }
+      ],
+      "papers_after_merge": 1,
+      "papers_best_single": 1,
+      "gaps_touched": [
+        {
+          "gap": "no-mitigation:rm-sycophancy",
+          "verdict": "confirmed"
+        }
+      ]
+    },
+    {
+      "members": [
+        {
+          "id": "synthetic-document-fine-tuning",
+          "label": "synthetic document fine-tuning",
+          "type": "Method",
+          "papers": 1,
+          "mentions": 4
+        },
+        {
+          "id": "synthetic-document-finetuning",
+          "label": "synthetic document finetuning",
+          "type": "Method",
+          "papers": 2,
+          "mentions": 3
+        }
+      ],
+      "papers_after_merge": 2,
+      "papers_best_single": 2,
+      "gaps_touched": []
+    },
+    {
+      "members": [
+        {
+          "id": "backdoored-behavior",
+          "label": "backdoored behavior",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 5
+        },
+        {
+          "id": "backdoor-behavior",
+          "label": "backdoor behavior",
+          "type": "Behavior",
+          "papers": 1,
+          "mentions": 2
+        }
+      ],
+      "papers_after_merge": 1,
+      "papers_best_single": 1,
+      "gaps_touched": []
+    },
+    {
+      "members": [
+        {
+          "id": "sparse-autoencoder",
+          "label": "sparse autoencoders",
+          "type": "Method",
+          "papers": 1,
+          "mentions": 2
+        },
+        {
+          "id": "sae",
+          "label": "SAE",
+          "type": "Method",
+          "papers": 1,
+          "mentions": 1
+        }
+      ],
+      "papers_after_merge": 1,
+      "papers_best_single": 1,
+      "gaps_touched": []
+    }
+  ],
+  "pairs": [
+    {
+      "a": "chain-of-thought-monitoring",
+      "a_label": "chain-of-thought monitoring",
+      "a_type": "Method",
+      "b": "cot-monitoring",
+      "b_label": "CoT monitoring",
+      "b_type": "Method",
+      "evidence": "abbreviation",
+      "confidence": "high",
+      "note": "",
+      "papers_a": [
+        "20-Korbak2025-CoTMonitorability",
+        "27-Fan2025-EvaluationFaking",
+        "29-2026-ValueConflictAlignmentFaking"
+      ],
+      "papers_b": [
+        "20-Korbak2025-CoTMonitorability"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "over-refusal-rate",
+      "a_label": "over-refusal rates",
+      "a_type": "Behavior",
+      "b": "overrefusal-rate",
+      "b_label": "overrefusal rates",
+      "b_type": "Behavior",
+      "evidence": "surface",
+      "confidence": "high",
+      "note": "",
+      "papers_a": [
+        "07-Schoen2025-StressTestingDeliberativeAlignment"
+      ],
+      "papers_b": [
+        "33-Guan2024-DeliberativeAlignment"
+      ],
+      "new_shared_papers": [
+        "07-Schoen2025-StressTestingDeliberativeAlignment",
+        "33-Guan2024-DeliberativeAlignment"
+      ]
+    },
+    {
+      "a": "reward-model-sycophancy",
+      "a_label": "reward model sycophancy",
+      "a_type": "Behavior",
+      "b": "rm-sycophancy",
+      "b_label": "RM-sycophancy",
+      "b_type": "Behavior",
+      "evidence": "abbreviation",
+      "confidence": "high",
+      "note": "",
+      "papers_a": [
+        "19-Marks2025-AuditingHiddenObjectives"
+      ],
+      "papers_b": [
+        "19-Marks2025-AuditingHiddenObjectives"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "strong-reject",
+      "a_label": "strong_reject",
+      "a_type": "EvaluationMethod",
+      "b": "strongreject",
+      "b_label": "StrongREJECT",
+      "b_type": "EvaluationMethod",
+      "evidence": "surface",
+      "confidence": "high",
+      "note": "",
+      "papers_a": [
+        "30-2026-BehaviouralAnalysisAlignmentFaking"
+      ],
+      "papers_b": [
+        "33-Guan2024-DeliberativeAlignment"
+      ],
+      "new_shared_papers": [
+        "30-2026-BehaviouralAnalysisAlignmentFaking",
+        "33-Guan2024-DeliberativeAlignment"
+      ]
+    },
+    {
+      "a": "synthetic-document-fine-tuning",
+      "a_label": "synthetic document fine-tuning",
+      "a_type": "Method",
+      "b": "synthetic-document-finetuning",
+      "b_label": "synthetic document finetuning",
+      "b_type": "Method",
+      "evidence": "surface",
+      "confidence": "high",
+      "note": "",
+      "papers_a": [
+        "01-Greenblatt2024-AlignmentFaking"
+      ],
+      "papers_b": [
+        "01-Greenblatt2024-AlignmentFaking",
+        "16-MacDiarmid2025-EmergentMisalignmentRewardHacking"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "backdoor-behavior",
+      "a_label": "backdoor behavior",
+      "a_type": "Behavior",
+      "b": "backdoored-behavior",
+      "b_label": "backdoored behavior",
+      "b_type": "Behavior",
+      "evidence": "inflection",
+      "confidence": "medium",
+      "note": "",
+      "papers_a": [
+        "03-Hubinger2024-SleeperAgents"
+      ],
+      "papers_b": [
+        "03-Hubinger2024-SleeperAgents"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "sae",
+      "a_label": "SAE",
+      "a_type": "Method",
+      "b": "sparse-autoencoder",
+      "b_label": "sparse autoencoders",
+      "b_type": "Method",
+      "evidence": "inflection",
+      "confidence": "medium",
+      "note": "",
+      "papers_a": [
+        "19-Marks2025-AuditingHiddenObjectives"
+      ],
+      "papers_b": [
+        "19-Marks2025-AuditingHiddenObjectives"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "chain-of-thought-monitoring",
+      "a_label": "chain-of-thought monitoring",
+      "a_type": "Method",
+      "b": "cot-monitor",
+      "b_label": "CoT monitor",
+      "b_type": "Method",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "agent vs activity (e.g. optimizer vs optimization): related, likely not the same entity",
+      "papers_a": [
+        "20-Korbak2025-CoTMonitorability",
+        "27-Fan2025-EvaluationFaking",
+        "29-2026-ValueConflictAlignmentFaking"
+      ],
+      "papers_b": [
+        "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "20-Korbak2025-CoTMonitorability",
+        "27-Fan2025-EvaluationFaking"
+      ],
+      "new_shared_papers": [
+        "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "29-2026-ValueConflictAlignmentFaking"
+      ]
+    },
+    {
+      "a": "cot-monitor",
+      "a_label": "CoT monitor",
+      "a_type": "Method",
+      "b": "cot-monitoring",
+      "b_label": "CoT monitoring",
+      "b_type": "Method",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "agent vs activity (e.g. optimizer vs optimization): related, likely not the same entity",
+      "papers_a": [
+        "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "20-Korbak2025-CoTMonitorability",
+        "27-Fan2025-EvaluationFaking"
+      ],
+      "papers_b": [
+        "20-Korbak2025-CoTMonitorability"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "fine-tuning",
+      "a_label": "fine-tuning",
+      "a_type": "Method",
+      "b": "finetuning",
+      "b_label": "finetuning",
+      "b_type": "Method",
+      "evidence": "surface",
+      "confidence": "low",
+      "note": "generic label",
+      "papers_a": [
+        "17-Greenblatt2024-PasswordLocked"
+      ],
+      "papers_b": [
+        "18-Berglund2023-TakenOutOfContext"
+      ],
+      "new_shared_papers": [
+        "17-Greenblatt2024-PasswordLocked",
+        "18-Berglund2023-TakenOutOfContext"
+      ]
+    },
+    {
+      "a": "longer-training-episode",
+      "a_label": "longer training episodes",
+      "a_type": "ExperimentalCondition",
+      "b": "training-on-longer-episode",
+      "b_label": "training on longer episodes",
+      "b_type": "ExperimentalCondition",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "same words in a different order: may be a different concept",
+      "papers_a": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "papers_b": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "mesa-optimization",
+      "a_label": "mesa-optimization",
+      "a_type": "Concept",
+      "b": "mesa-optimizer",
+      "b_label": "mesa-optimizer",
+      "b_type": "Concept",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "agent vs activity (e.g. optimizer vs optimization): related, likely not the same entity",
+      "papers_a": [
+        "04-Hubinger2019-LearnedOptimization"
+      ],
+      "papers_b": [
+        "04-Hubinger2019-LearnedOptimization"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "model-reward",
+      "a_label": "model reward",
+      "a_type": "Concept",
+      "b": "reward-model",
+      "b_label": "reward models",
+      "b_type": "Concept",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "same words in a different order: may be a different concept",
+      "papers_a": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "papers_b": [
+        "19-Marks2025-AuditingHiddenObjectives"
+      ],
+      "new_shared_papers": [
+        "05-Carlsmith2023-SchemingAIs",
+        "19-Marks2025-AuditingHiddenObjectives"
+      ]
+    },
+    {
+      "a": "red-team",
+      "a_label": "red team",
+      "a_type": "EvaluationMethod",
+      "b": "red-teaming",
+      "b_label": "red-teaming",
+      "b_type": "Method",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "",
+      "papers_a": [
+        "05-Carlsmith2023-SchemingAIs",
+        "26-Hobbhahn2024-SafetyCasesScheming"
+      ],
+      "papers_b": [
+        "10-Park2023-AIDeceptionSurvey"
+      ],
+      "new_shared_papers": [
+        "05-Carlsmith2023-SchemingAIs",
+        "10-Park2023-AIDeceptionSurvey",
+        "26-Hobbhahn2024-SafetyCasesScheming"
+      ]
+    },
+    {
+      "a": "reward-on-the-episode-seeker",
+      "a_label": "reward-on-the-episode seekers",
+      "a_type": "Concept",
+      "b": "reward-on-the-episode-seeking",
+      "b_label": "reward-on-the-episode seeking",
+      "b_type": "Concept",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "agent vs activity (e.g. optimizer vs optimization): related, likely not the same entity",
+      "papers_a": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "papers_b": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "new_shared_papers": []
+    },
+    {
+      "a": "schemer",
+      "a_label": "schemers",
+      "a_type": "Concept",
+      "b": "scheming",
+      "b_label": "scheming",
+      "b_type": "Behavior",
+      "evidence": "inflection",
+      "confidence": "low",
+      "note": "agent vs activity (e.g. optimizer vs optimization): related, likely not the same entity",
+      "papers_a": [
+        "05-Carlsmith2023-SchemingAIs"
+      ],
+      "papers_b": [
+        "02-Meinke2024-InContextScheming",
+        "05-Carlsmith2023-SchemingAIs",
+        "07-Schoen2025-StressTestingDeliberativeAlignment",
+        "16-MacDiarmid2025-EmergentMisalignmentRewardHacking",
+        "26-Hobbhahn2024-SafetyCasesScheming",
+        "28-Krakovna2026-HoneypotEvals"
+      ],
+      "new_shared_papers": []
+    }
+  ]
+}

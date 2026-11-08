@@ -31,3 +31,12 @@ export const EDGE_COLORS = {
   resolve: '#34d399',
   provenance: '#1f9d6b',
 };
+
+/** Border colour of Gap nodes by review verdict. */
+export const VERDICT_COLOR: Record<string, string> = {
+  confirmed: '#f43f5e',
+  'partly-addressed': '#f59e0b',
+  'closed-in-corpus': '#34d399',
+  'extraction-artifact': '#94a3b8',
+  'not-supported': '#64748b',
+};

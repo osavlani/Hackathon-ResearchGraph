@@ -1,0 +1,21 @@
+{
+  "_comment": "Curated seed abbreviations (lowercase). The pipeline adds pairs mined from '<long form> (<ABBR>)' patterns in the graph's own evidence passages; mined pairs are listed in the report.",
+  "cot": "chain of thought",
+  "rl": "reinforcement learning",
+  "rlhf": "reinforcement learning from human feedback",
+  "rlaif": "reinforcement learning from ai feedback",
+  "sft": "supervised fine tuning",
+  "hhh": "helpful honest harmless",
+  "llm": "large language model",
+  "llms": "large language models",
+  "oocr": "out of context reasoning",
+  "rm": "reward model",
+  "dpo": "direct preference optimization",
+  "ppo": "proximal policy optimization",
+  "sae": "sparse autoencoder",
+  "saes": "sparse autoencoders",
+  "sa": "situational awareness",
+  "finetuning": "fine tuning",
+  "finetuned": "fine tuned",
+  "fine-tuning": "fine tuning"
+}

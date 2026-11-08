@@ -1,0 +1,249 @@
+{
+  "no_reference_section": [
+    {
+      "paper": "rank:11",
+      "file": "11_Sheshadri2025_WhyFakeAlignment.pdf",
+      "reason": "no reference heading and no citation-dense pages"
+    },
+    {
+      "paper": "rank:12",
+      "file": "12_Laine2024_SAD.pdf",
+      "reason": "no reference heading and no citation-dense pages"
+    },
+    {
+      "paper": "Simple-probes-can-catch-sleeper-agents-Anthropic",
+      "file": "Simple probes can catch sleeper agents _ Anthropic.pdf",
+      "reason": "no reference heading and no citation-dense pages"
+    }
+  ],
+  "graph_papers_without_pdf": [],
+  "ambiguous_citations": [
+    {
+      "source": "06-Greenblatt2024-AIControl",
+      "source_in_graph": true,
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.28; 3 corpus papers share this author+year",
+      "reference_page": 19,
+      "pos": 712,
+      "reference_block": "19-21",
+      "snippet": "stodefendagainstcorrelatedattacksarxivpreprintarxiv190306293greenblattrandshlegerisb2023thecaseforensuringthatpowerfulaisarecontrolledhttpsw"
+    },
+    {
+      "source": "06-Greenblatt2024-AIControl",
+      "source_in_graph": true,
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.09; 3 corpus papers share this author+year",
+      "reference_page": 19,
+      "pos": 712,
+      "reference_block": "19-21",
+      "snippet": "stodefendagainstcorrelatedattacksarxivpreprintarxiv190306293greenblattrandshlegerisb2023thecaseforensuringthatpowerfulaisarecontrolledhttpswwwalignmentforumor"
+    },
+    {
+      "source": "08-vanderWeij2024-AISandbagging",
+      "source_in_graph": true,
+      "target": "21-Phuong2025-StealthSituationalAwareness",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.47",
+      "reference_page": 14,
+      "pos": 7212,
+      "reference_block": "11-19",
+      "snippet": "discoveringlanguagemodelbehaviorswithmodelwrittenevaluationsphuongmaitchisonmcattecoganskaskasoliakrakovnavlindnerdrahtzmassaelyhodkinsonsetal2024evaluatingf"
+    },
+    {
+      "source": "09-Scheurer2023-DeceiveUnderPressure",
+      "source_in_graph": true,
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.36; 3 corpus papers share this author+year",
+      "reference_page": 10,
+      "pos": 996,
+      "reference_block": "10-12",
+      "snippet": "stianosamuelrbowmanlogangrahamjaredkaplansorenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdecepti"
+    },
+    {
+      "source": "09-Scheurer2023-DeceiveUnderPressure",
+      "source_in_graph": true,
+      "target": "06-Greenblatt2024-AIControl",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.12; 3 corpus papers share this author+year",
+      "reference_page": 10,
+      "pos": 996,
+      "reference_block": "10-12",
+      "snippet": "stianosamuelrbowmanlogangrahamjaredkaplansorenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdeceptivellmsthatpe"
+    },
+    {
+      "source": "09-Scheurer2023-DeceiveUnderPressure",
+      "source_in_graph": true,
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.09; 3 corpus papers share this author+year",
+      "reference_page": 10,
+      "pos": 996,
+      "reference_block": "10-12",
+      "snippet": "stianosamuelrbowmanlogangrahamjaredkaplansorenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdeceptivellmsthatpersistt"
+    },
+    {
+      "source": "rank:15",
+      "source_in_graph": false,
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.28; 3 corpus papers share this author+year",
+      "reference_page": 18,
+      "pos": 3287,
+      "reference_block": "17-20",
+      "snippet": "istianosamuelrbowmanlogangrahamjaredkaplansrenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdecepti"
+    },
+    {
+      "source": "rank:15",
+      "source_in_graph": false,
+      "target": "06-Greenblatt2024-AIControl",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.12; 3 corpus papers share this author+year",
+      "reference_page": 18,
+      "pos": 3287,
+      "reference_block": "17-20",
+      "snippet": "istianosamuelrbowmanlogangrahamjaredkaplansrenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdeceptivellmsthatpe"
+    },
+    {
+      "source": "rank:15",
+      "source_in_graph": false,
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.09; 3 corpus papers share this author+year",
+      "reference_page": 18,
+      "pos": 3287,
+      "reference_block": "17-20",
+      "snippet": "istianosamuelrbowmanlogangrahamjaredkaplansrenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdeceptivellmsthatpersistt"
+    },
+    {
+      "source": "19-Marks2025-AuditingHiddenObjectives",
+      "source_in_graph": true,
+      "target": "17-Greenblatt2024-PasswordLocked",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.12; 3 corpus papers share this author+year",
+      "reference_page": 23,
+      "pos": 7501,
+      "reference_block": "21-26",
+      "snippet": "istianosamuelrbowmanlogangrahamjaredkaplansrenmindermannryangreenblattbuckshlegerisnicholasschieferandethanperezsleeperagentstrainingdeceptivellmsthatpersistt"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "source_in_graph": true,
+      "target": "06-Greenblatt2024-AIControl",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.12; 3 corpus papers share this author+year",
+      "reference_page": 31,
+      "pos": 7776,
+      "reference_block": "29-35",
+      "snippet": "ooneyallandafoeancadraganscottemmonsowainevansdavidfarhiryangreenblattdanhendrycksmariushobbhahnevanhubingergeoffreyirvingerikjennerdanielkokotajlovicto"
+    },
+    {
+      "source": "24-Taylor2025-AuditingGamesSandbagging",
+      "source_in_graph": true,
+      "target": "33-Guan2024-DeliberativeAlignment",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "title-prefix only",
+      "reference_page": 32,
+      "pos": 12572,
+      "reference_block": "29-35",
+      "snippet": "glaeseboazbarakwojciechzarembaandmariushobbhahnstresstestingdeliberativealignmentforantischemingtrainingarxivpreprintarxiv2509155412025urlhttpsarxivorgabs25"
+    },
+    {
+      "source": "27-Fan2025-EvaluationFaking",
+      "source_in_graph": true,
+      "target": "21-Phuong2025-StealthSituationalAwareness",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "author+year, title similarity 0.47",
+      "reference_page": 11,
+      "pos": 4829,
+      "reference_block": "9-13",
+      "snippet": "be7758f3722c1o3ando4minisystemcardpdf2025accessed2025042331mphuongmaitchisonecattscoganakaskasolivkrakovnadlindnermrahtzyassaelshodkinsonetalevaluatingfronti"
+    },
+    {
+      "source": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "source_in_graph": true,
+      "target": "01-Greenblatt2024-AlignmentFaking",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "arxiv-id; target (2024) is newer than source (2022): PDF may be a later revision",
+      "reference_page": 17,
+      "pos": 14154,
+      "reference_block": "13-25",
+      "snippet": "udetalalignmentfakinginlargelanguagemodelsarxivpreprintarxiv2412140932024arthurguezmehdimirzakarolgregorrishabhkabrasbastienracanirethophane"
+    },
+    {
+      "source": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "source_in_graph": true,
+      "target": "02-Meinke2024-InContextScheming",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "arxiv-id; target (2024) is newer than source (2022): PDF may be a later revision",
+      "reference_page": 19,
+      "pos": 21427,
+      "reference_block": "13-25",
+      "snippet": "rontiermodelsarecapableofincontextschemingarxivpreprintarxiv2412049842024kevinmengdavidbaualexandonianandyonatanbelinkovlocatingandeditingfactu"
+    },
+    {
+      "source": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "source_in_graph": true,
+      "target": "03-Hubinger2024-SleeperAgents",
+      "target_in_graph": true,
+      "status": "ambiguous",
+      "method": "arxiv-id; target (2024) is newer than source (2022): PDF may be a later revision",
+      "reference_page": 18,
+      "pos": 16652,
+      "reference_block": "13-25",
+      "snippet": "eptivellmsthatpersistthroughsafetytrainingarxivpreprintarxiv2401055662024marcushutteruniversalartificialintelligencesequentialdecisionsbasedonalgorithmicprobabilitysp"
+    },
+    {
+      "source": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "source_in_graph": true,
+      "target": "rank:12",
+      "target_in_graph": false,
+      "status": "ambiguous",
+      "method": "exact-title; target (2024) is newer than source (2022): PDF may be a later revision",
+      "reference_page": 19,
+      "pos": 19126,
+      "reference_block": "13-25",
+      "snippet": "alesnijrmyscheurermariushobbhahnalexandermeinkeandowainevansmemyselfandaithesituationalawarenessdatasetsadforllmsadvancesinneuralinformationprocessingsys"
+    },
+    {
+      "source": "34-Ngo2022-AlignmentProblemDeepLearning",
+      "source_in_graph": true,
+      "target": "rank:15",
+      "target_in_graph": false,
+      "status": "ambiguous",
+      "method": "arxiv-id; target (2024) is newer than source (2022): PDF may be a later revision",
+      "reference_page": 16,
+      "pos": 11165,
+      "reference_block": "13-25",
+      "snippet": "gatingrewardtamperinginlargelanguagemodelsarxivpreprintarxiv2406101622024jaredmdiamondanddougorduniogunsgermsandsteelvolume521booksontape1999florianedornerm"
+    }
+  ],
+  "quotes_not_found_locally": [
+    {
+      "paper_id": "06-Greenblatt2024-AIControl",
+      "pipeline_status": [
+        "verified"
+      ],
+      "coverage": 0.71,
+      "passage": "Trusted monitoring with defer to trusted (10%):      93%   Write code with a subtle back-   83%"
+    }
+  ],
+  "claims_needing_review_beyond_cap": []
+}

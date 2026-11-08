@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "tsx scripts/test-compare.ts && tsx scripts/test-grounding.ts && tsx scripts/test-reveal.ts"
   },
   "dependencies": {
     "cytoscape": "^3.34.4",
